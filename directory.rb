@@ -8,9 +8,13 @@ def input_students
 	#while the name is not empty, repeat this code
 	while !name.empty? do
 	  # add the student hash to the array
-	  students << {name: name, cohort: :november}
-	  puts "Now we have #{students.count} students"
+	  if name[0].upcase == "B"
+			students << {name: name, cohort: :november}
+	  	puts "Now we have #{students.count} students"
+	  else
+	  	puts "That name doesn't begin with b."
 	  # get another name from the user
+	  end
 	  name = gets.chomp
 	end
 	# return the array of students
