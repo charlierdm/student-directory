@@ -1,6 +1,8 @@
 require 'csv'
 @students = [] 
 
+puts __FILE__
+
 def print_menu
   puts "1. Input the students"
   puts "2. Show the students"
@@ -99,3 +101,4 @@ end
 
 try_load_students
 interactive_menu
+
